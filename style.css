@@ -1,0 +1,201 @@
+@keyframes slike {
+    0% {
+      background-image: url("images/slikepozadina/carsija.png");
+    }
+    20% {
+      background-image: url("images/slikepozadina/sebilj.png");
+    }
+    40% {
+      background-image: url("images/slikepozadina/pogled.png");
+    }
+    60% {
+      background-image: url("images/slikepozadina/kated.png");
+    }
+    80% {
+      background-image: url("images/slikepozadina/most.png");
+    }
+    100% {
+      background-image: url("images/slikepozadina/carsija.png");
+    }
+  }
+
+  @keyframes slikekontakt {
+    0% {
+      background-image: url("images/slikekontakt/kvadratici.png");
+    }
+    33% {
+      background-image: url("images/slikekontakt/kockice.jpg");
+    }
+    66% {
+      background-image: url("images/slikekontakt/kontaktciko.jpg");
+    }
+    100% {
+      background-image: url("images/slikekontakt/kvadratici.png");
+    }
+  }
+
+  @keyframes animacija1 {
+    0% {
+      background-color: #4749ad;
+    }
+    50% {
+      background-color: #a4283e;
+    }
+    100% {
+      background-color: #4749ad;
+    }
+  }
+
+  @keyframes animacija2 {
+    0% {
+      background-color: #4749ada2;
+    }
+    50% {
+      background-color: #a4283ea2;
+    }
+    100% {
+      background-color: #4749ada2;
+    }
+  }
+
+  @keyframes animacija3 {
+    0% {
+      background-color: #282961e5;
+    }
+    50% {
+      background-color: #531420e5;
+    }
+    100% {
+      background-color: #282961e5;
+    }
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+
+    color: rgb(117, 117, 117);
+    font-style: normal;
+    font-family: "Bahnschrift";
+    background-color: rgb(255, 255, 255);
+  }
+
+  #logo {
+    width: 14rem;
+    float: left;
+    margin: 5rem;
+  }
+
+  .kontaktheder {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #4749ad;
+    background-blend-mode: multiply;
+
+    height: 24rem;
+    padding: 0rem;
+
+    animation: animacija1 7s infinite linear, slikekontakt 15s infinite;
+  }
+
+  .normalniheder {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #4749ad;
+    background-blend-mode: multiply;
+
+    height: 24rem;
+    padding: 0rem;
+
+    animation: animacija1 7s infinite linear, slike 15s infinite;
+  }
+  
+
+  #menu {
+    background-color: rgba(29, 31, 32, 0.4);
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+    animation-name: animacija3;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+  }
+
+  .menuoptions {
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 0.5rem;
+    font-size: 20pt;
+  }
+
+  a {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-style: normal;
+    text-decoration: none;
+  }
+
+  .menuoptions:hover {
+    border-radius: 3rem;
+
+    animation-name: animacija2;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+  .menuoptions:active {
+    animation-name: animacija3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  h1 {
+    color: rgb(255, 255, 255);
+    font-size: 9.5rem;
+    font-style: italic;
+
+    display: inline;
+    position: absolute;
+    white-space: nowrap;
+  }
+
+  h2 {
+    margin-left: 16%;
+    margin-right: 16%;
+    font-weight: 800;
+    font-size: 30pt;
+  }
+
+  li, p {
+    margin-left: 21%;
+    margin-right: 21%;
+    font-weight: 100;
+    font-size: 20pt;
+  }
+  
+  #about {
+    background-color: #26252b;
+    color: white;
+
+    height: 25rem;
+    padding: 5rem;
+    text-align: center;
+  }
+
+  #slikice {
+    margin-left: 20%;
+    margin-right: 20%;
+    align-content: center;
+  }
+
+  ::selection {
+    background-color: rgb(37, 37, 214);
+    color: white;
+  }
+
+  form {
+    margin-left: 20%;
+  }

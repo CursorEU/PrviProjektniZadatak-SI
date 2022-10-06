@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/logaux/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Kontaktirajte nas</title>
+  </head>
+  <body>
+    <header>
+      <div class="kontaktheder">
+        <img id="logo" src="/images/logaux/telfon.png" alt="Telfon" />
+        <h1>Kontaktirajte nas</h1>
+      </div>
+    </header>
+
+    <div id="menu">
+      <a href="index.html" class="menuoptions">Natrag</a>
+    </div>
+
+    <h2><br />Unesite</h2>
+    <form>
+      Korisničko ime: <input type="text" name="username" required /><br /><br />
+
+      E-Mail: <input type="email" name="imejl" /><br /><br />
+
+      Lozinka: <input type="password" name="pass" /><br /><br />
+
+      Datum rođenja: <input type="date" name="datum" /><br /><br />
+
+      Spol: <br />
+      <input type="radio" name="gender" id="male" /><label for="male"
+        >Muško</label
+      >
+      <input type="radio" name="gender" id="female" /><label for="female"
+        >Žensko</label
+      >
+      <input type="radio" name="gender" id="other" /><label for="other"
+        >Nešto drugo</label
+      ><br /><br />
+
+      Grad:
+      <select name="grad">
+        <option value="-"></option>
+        <option value="sarajevo">Sarajevo</option>
+        <option value="banjaluka">Banja Luka</option>
+        <option value="tuzla">Tuzla</option>
+        <option value="mostar">Mostar</option>
+        <option value="zenica">Zenica</option>
+        <option value="brcko">Brčko</option>
+      </select>
+
+      <br /><br />
+
+      Da li volite: <br />
+      <input type="checkbox" name="zalasci" /><label for="zalasci"
+        >Zalaske sunca</label
+      ><br />
+      <input type="checkbox" name="sume" /><label for="sume">Šume</label><br />
+      <input type="checkbox" name="plaze" /><label for="plaze">Plaže</label
+      ><br />
+
+      <br /><br />
+      <button type="reset">Ponovno</button>
+      <button type="submit">Pošaljite</button>
+    </form>
+  </body>
+</html>
